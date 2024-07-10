@@ -10,81 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Ojuju:wght@200..800&family=Rakkas&display=swap"
       rel="stylesheet"
     />
-    <style>
-      h1 {
-        text-align: center;
-        font-family: "Ojuju", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: <weight>;
-        font-style: normal;
-      }
-      h2 {
-        text-align: center;
-        font-style: italic;
-        font-weight: lighter;
-        font-size: 12px;
-      }
-      a:hover {
-        cursor: pointer;
-      }
-      .service-1 {
-        font-size: large;
-        color: grey;
-      }
-      .service-2 {
-        font-size: large;
-        color: grey;
-      }
-      .service-3 {
-        font-size: large;
-        color: grey;
-      }
-
-      img {
-        display: block;
-        margin: auto;
-        padding: 5px;
-        width: 250px;
-      }
-      .column {
-        float: left;
-        /* width: 30%; */
-        padding: 5px;
-      }
-
-      .row {
-        display: flex;
-        justify-content: center;
-      }
-      p {
-        text-align: center;
-        margin: 20px;
-        width: 500px;
-        line-height: 1.5;
-      }
-      a {
-        font-size: small;
-        color: rgb(84, 63, 247);
-      }
-
-      button {
-        margin: 20px;
-        padding: 20px;
-        font-size: 15px;
-        font-family: ;
-        border: 1px solid black;
-        border-radius: 10px;
-        color: rgb(255, 255, 255);
-        background-color: rgb(11, 11, 11);
-        box-shadow: 5px 5px 10px rgb(93, 92, 92);
-        transition: all 150ms ease-in-out;
-      }
-      button:hover {
-        background-color: rgb(252, 252, 252);
-        color: rgb(14, 14, 13);
-        cursor: pointer;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <h1>Girl With a Plan</h1>
@@ -157,20 +83,7 @@
     <div class="row">
       <button onclick="buyCake()">CONTACT US</button>
     </div>
-    <script>
-      function buyCake() {
-        let name = prompt("What is your name?");
-        let age = prompt("How old are you");
 
-        if (age >= 18) {
-          alert("Hi " + name + ", you can buy chocolate cake! 😃");
-        } else {
-          alert("Sorry " + name + ", you cannot buy chocolate cake! 🤕");
-        }
-
-        let buyButton = document.querySelector("button");
-        buyButton.addEventListener("click", buyCake);
-      }
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
