@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Girl With a Plan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ojuju:wght@200..800&family=Rakkas&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      h1 {
+        text-align: center;
+        font-family: "Ojuju", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        font-style: normal;
+      }
+      h2 {
+        text-align: center;
+        font-style: italic;
+        font-weight: lighter;
+        font-size: 12px;
+      }
+      a:hover {
+        cursor: pointer;
+      }
+      .service-1 {
+        font-size: large;
+        color: grey;
+      }
+      .service-2 {
+        font-size: large;
+        color: grey;
+      }
+      .service-3 {
+        font-size: large;
+        color: grey;
+      }
+
+      img {
+        display: block;
+        margin: auto;
+        padding: 5px;
+        width: 250px;
+      }
+      .column {
+        float: left;
+        /* width: 30%; */
+        padding: 5px;
+      }
+
+      .row {
+        display: flex;
+        justify-content: center;
+      }
+      p {
+        text-align: center;
+        margin: 20px;
+        width: 500px;
+        line-height: 1.5;
+      }
+      a {
+        font-size: small;
+        color: rgb(84, 63, 247);
+      }
+
+      button {
+        margin: 20px;
+        padding: 20px;
+        font-size: 15px;
+        font-family: ;
+        border: 1px solid black;
+        border-radius: 10px;
+        color: rgb(255, 255, 255);
+        background-color: rgb(11, 11, 11);
+        box-shadow: 5px 5px 10px rgb(93, 92, 92);
+        transition: all 150ms ease-in-out;
+      }
+      button:hover {
+        background-color: rgb(252, 252, 252);
+        color: rgb(14, 14, 13);
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Girl With a Plan</h1>
+    <h2>
+      <a href="#" target="blank" class="service-1">planner</a> |
+      <a href="#" target="blank" class="service-2"> florist</a> |
+      <a href="#" target="blank" class="service-3"> rentals</a>
+    </h2>
+
+    <hr />
+
+    <div class="row">
+      <span class="column">
+        <img
+          src="https://taliabellevents.com/wp-content/uploads/2021/01/7503381PUYCERMENOFOTOGRAFIA.jpg"
+          alt=" table set up"
+          width="50"
+        />
+      </span>
+      <span class="column">
+        <img
+          src="https://taliabellevents.com/wp-content/uploads/2021/01/7503310PUYCERMENOFOTOGRAFIA.jpg"
+          alt="flowers"
+          width="50"
+        />
+      </span>
+      <span class="column">
+        <img
+          src="https://taliabellevents.com/wp-content/uploads/2021/01/7503305PUYCERMENOFOTOGRAFIA-780x1168.jpg"
+          alt="center piece"
+          width="50"
+        />
+      </span>
+    </div>
+    <div class="row">
+      <p>
+        <em>
+          <strong>Girl With a Plan</strong> is a sole proprietorship that offers
+          event planning, florist and event equipment rental services.
+          <br />
+          <br />
+          We aim to cater to the clients in and around Johannesburg from anyone
+          wanting to throw a birthday party, bridal shower, wanting to give
+          their loved ones a beautiful send off or baby showers.
+          <br />
+          <br />
+          Our planning service entails the detailed planning and preparation of
+          events from ideas or concepts to realisation with a basic check list
+          for all types of events mentioned above. We provide for everything a
+          client may need from formal/casual dinner setup to flower
+          arrangements, tables, chairs etc.
+          <br />
+          <br />
+          Florist services entails making client specific bouquets, event
+          centred flower arrangements and basic everyday florist flowers sold to
+          the Westrand community and online to be delivered across Johannesburg.
+          <br />
+          <br />
+          Rental services entail the rental of tables, chairs, tents, gas
+          stoves, tents, heaters, fans, cutlery, glassware and dinnerware to
+          community members at a set price per item, if clients don’t want to
+          make use of our planning services. This will be offered to clients in
+          and around Johannesburg, delivered and collected by us. This will be
+          for events not planned by us for example, funerals, weddings, baby
+          showers or even birthday parties.
+        </em>
+      </p>
+    </div>
+    <br />
+    <div class="row">
+      <button onclick="buyCake()">CONTACT US</button>
+    </div>
+    <script>
+      function buyCake() {
+        let name = prompt("What is your name?");
+        let age = prompt("How old are you");
+
+        if (age >= 18) {
+          alert("Hi " + name + ", you can buy chocolate cake! 😃");
+        } else {
+          alert("Sorry " + name + ", you cannot buy chocolate cake! 🤕");
+        }
+
+        let buyButton = document.querySelector("button");
+        buyButton.addEventListener("click", buyCake);
+      }
+    </script>
+  </body>
+</html>
